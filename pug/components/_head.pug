@@ -1,9 +1,10 @@
-mixin head(descripcion, urlico, urlcss1, urlcss2, urlcss3, urlfont1, urlfont2, titulo)
+mixin head(description, color, urlico, urlcss1, urlcss2, urlcss3, urlfont1, urlfont2, tittle)
     head 
         meta(charset="UTF-8")
         meta(name="description", content=""+descripcion)
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(name="robots", content="index, follow")
+        meta(name="theme-color", content=""+color)
         link(rel="icon", href=""+urlico)
         link(rel="stylesheet", href=""+urlcss1)
         link(rel="stylesheet", href=""+urlcss2)
@@ -11,4 +12,3 @@ mixin head(descripcion, urlico, urlcss1, urlcss2, urlcss3, urlfont1, urlfont2, t
         link(rel="stylesheet", href=""+urlfont1)
         link(rel="stylesheet", href=""+urlfont2)
         title #{titulo}
-        //- +head("descripcion, urlico, urlcss1, urlcss2, urlcss3, urlfont1, urlfont2, titulo")
